@@ -13,9 +13,9 @@ fs.writeFile(
   }
 );
 
-var puppy =
-  "https://images.unsplash.com/photo-1548658146-f142deadf8f7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHB1cHB5fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60%27";
+var people =
+  "https://images.unsplash.com/photo-1609759032099-22f533a91b15?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80";
 
-https.get(puppy, function (response) {
-  response.pipe(fs.createWriteStream(__dirname + "/mydog.jpg"));
+https.get(people, function (response) {
+  response.pipe(fs.createWriteStream(__dirname + "/mydog2.jpg"));
 });
